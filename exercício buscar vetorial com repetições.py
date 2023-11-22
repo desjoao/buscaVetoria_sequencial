@@ -11,7 +11,7 @@ def leitura(tam):
     vetor = [0]*tam
     for i in range(tam):
         vetor[i] = int(input(f'Informe o {i +1}º valor positivo: '))
-        if vetor[i] <0:
+        while vetor[i] <0:
              vetor[i] = int(input(f'Informe o {i +1}º valor positivo: '))
     return vetor
 
